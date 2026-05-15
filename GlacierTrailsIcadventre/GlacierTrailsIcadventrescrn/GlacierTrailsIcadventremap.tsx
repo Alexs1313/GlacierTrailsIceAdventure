@@ -348,7 +348,6 @@ export default GlacierTrailsIcadventremap;
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    backgroundColor: bg,
   },
   header: {
     paddingHorizontal: 18,

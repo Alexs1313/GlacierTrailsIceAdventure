@@ -1,4 +1,4 @@
-package com.glaciertrailsiceadventure
+package com.glacier.ice.explorer
 
 import android.app.Application
 import com.facebook.react.PackageList

@@ -5,6 +5,7 @@ import {
   Image,
   ImageBackground,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   View,
@@ -15,6 +16,8 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import type {GlacierTrailsIcadventrenvgtrStackParamList} from '../GlacierTrailsIcadventrenav/glaciertrailsIcadventrenvgtrnavtypes';
 import {loadNvgtrBest, saveNvgtrBest} from './GlacierTrailsIcadventrenvgtrbest';
 import Orientation from 'react-native-orientation-locker';
+import GlacierTrailsIcadventrelay from '../GlacierTrailsIcadventrecmp/GlacierTrailsIcadventrelay';
+import LinearGradient from 'react-native-linear-gradient';
 
 const bg = '#144881';
 const accent = '#5BB0D9';
@@ -250,6 +253,7 @@ const GlacierTrailsIcadventrenvgtrRun = () => {
         <View style={styles.hudLeft}>
           {[0, 1, 2].map(i => (
             <Image
+              key={i}
               source={
                 i >= lives
                   ? require('../../assets/imgs/glaciertrailsgmliked.png')
@@ -341,32 +345,38 @@ const GlacierTrailsIcadventrenvgtrRun = () => {
             style={[styles.menuHero, {height: heroOverlayH}]}
             resizeMode="cover"
           />
-          <View style={[styles.menuPanel, {paddingBottom: insets.bottom + 28}]}>
-            <Text style={styles.menuTitle}>Game Paused</Text>
-            <Text style={styles.menuDesc}>
-              The ice field is waiting. Your ship is safe for now, but the next
-              wave of icebergs is still ahead.
-            </Text>
-            <Pressable
-              onPress={() => {
-                setPhase('play');
-                phaseRef.current = 'play';
-              }}
-              style={({pressed}) => [
-                styles.menuBtnPrimary,
-                pressed && {opacity: 0.92},
-              ]}>
-              <Text style={styles.menuBtnPrimaryTxt}>Resume</Text>
-            </Pressable>
-            <Pressable
-              onPress={() => nav.navigate('GlacierTrailsIcadventrenvgtrMenu')}
-              style={({pressed}) => [
-                styles.menuBtnGhost,
-                pressed && {opacity: 0.9},
-              ]}>
-              <Text style={styles.menuBtnGhostTxt}>Back to Menu</Text>
-            </Pressable>
-          </View>
+          <LinearGradient
+            colors={['rgb(10, 93, 137)', 'rgb(3, 31, 44)']}
+            style={[styles.menuPanel, {paddingBottom: insets.bottom + 28}]}>
+            <ScrollView
+              contentContainerStyle={{flexGrow: 1}}
+              showsVerticalScrollIndicator={false}>
+              <Text style={styles.menuTitle}>Game Paused</Text>
+              <Text style={styles.menuDesc}>
+                The ice field is waiting. Your ship is safe for now, but the
+                next wave of icebergs is still ahead.
+              </Text>
+              <Pressable
+                onPress={() => {
+                  setPhase('play');
+                  phaseRef.current = 'play';
+                }}
+                style={({pressed}) => [
+                  styles.menuBtnPrimary,
+                  pressed && {opacity: 0.92},
+                ]}>
+                <Text style={styles.menuBtnPrimaryTxt}>Resume</Text>
+              </Pressable>
+              <Pressable
+                onPress={() => nav.navigate('GlacierTrailsIcadventrenvgtrMenu')}
+                style={({pressed}) => [
+                  styles.menuBtnGhost,
+                  pressed && {opacity: 0.9},
+                ]}>
+                <Text style={styles.menuBtnGhostTxt}>Back to Menu</Text>
+              </Pressable>
+            </ScrollView>
+          </LinearGradient>
         </View>
       ) : null}
 
@@ -377,42 +387,48 @@ const GlacierTrailsIcadventrenvgtrRun = () => {
             style={[styles.menuHero, {height: heroOverlayH}]}
             resizeMode="cover"
           />
-          <View style={[styles.menuPanel, {paddingBottom: insets.bottom + 28}]}>
-            <Text style={[styles.menuTitle, styles.menuTitleTight]}>
-              Game Over
-            </Text>
-            <View style={styles.goScoreRow}>
-              <View style={styles.goCard}>
-                <Text style={styles.goLbl}>YOUR SCORE</Text>
-                <Text style={styles.goValY}>{score}</Text>
+          <LinearGradient
+            colors={['rgb(10, 93, 137)', 'rgb(3, 31, 44)']}
+            style={[styles.menuPanel, {paddingBottom: insets.bottom + 28}]}>
+            <ScrollView
+              contentContainerStyle={{flexGrow: 1}}
+              showsVerticalScrollIndicator={false}>
+              <Text style={[styles.menuTitle, styles.menuTitleTight]}>
+                Game Over
+              </Text>
+              <View style={styles.goScoreRow}>
+                <View style={styles.goCard}>
+                  <Text style={styles.goLbl}>YOUR SCORE</Text>
+                  <Text style={styles.goValY}>{score}</Text>
+                </View>
+                <View style={styles.goCard}>
+                  <Text style={styles.goLbl}>BEST SCORE</Text>
+                  <Text style={styles.goValB}>{Math.max(best, score)}</Text>
+                </View>
               </View>
-              <View style={styles.goCard}>
-                <Text style={styles.goLbl}>BEST SCORE</Text>
-                <Text style={styles.goValB}>{Math.max(best, score)}</Text>
-              </View>
-            </View>
-            {isNewRecord ? (
-              <View style={styles.goBadge}>
-                <Text style={styles.goBadgeTxt}>🏆 New Record!</Text>
-              </View>
-            ) : null}
-            <Pressable
-              onPress={resetGame}
-              style={({pressed}) => [
-                styles.menuBtnPrimary,
-                pressed && {opacity: 0.92},
-              ]}>
-              <Text style={styles.menuBtnPrimaryTxt}>Play Again</Text>
-            </Pressable>
-            <Pressable
-              onPress={() => nav.replace('GlacierTrailsIcadventrenvgtrMenu')}
-              style={({pressed}) => [
-                styles.menuBtnGhost,
-                pressed && {opacity: 0.9},
-              ]}>
-              <Text style={styles.menuBtnGhostTxt}>Back to Menu</Text>
-            </Pressable>
-          </View>
+              {isNewRecord ? (
+                <View style={styles.goBadge}>
+                  <Text style={styles.goBadgeTxt}>🏆 New Record!</Text>
+                </View>
+              ) : null}
+              <Pressable
+                onPress={resetGame}
+                style={({pressed}) => [
+                  styles.menuBtnPrimary,
+                  pressed && {opacity: 0.92},
+                ]}>
+                <Text style={styles.menuBtnPrimaryTxt}>Play Again</Text>
+              </Pressable>
+              <Pressable
+                onPress={() => nav.replace('GlacierTrailsIcadventrenvgtrMenu')}
+                style={({pressed}) => [
+                  styles.menuBtnGhost,
+                  pressed && {opacity: 0.9},
+                ]}>
+                <Text style={styles.menuBtnGhostTxt}>Back to Menu</Text>
+              </Pressable>
+            </ScrollView>
+          </LinearGradient>
         </View>
       ) : null}
     </View>
@@ -424,7 +440,6 @@ export default GlacierTrailsIcadventrenvgtrRun;
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    backgroundColor: bg,
   },
   hud: {
     flexDirection: 'row',
@@ -511,7 +526,6 @@ const styles = StyleSheet.create({
   },
   menuFull: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: bg,
     flex: 1,
     flexDirection: 'column',
   },
@@ -567,8 +581,8 @@ const styles = StyleSheet.create({
     width: '93%',
     alignSelf: 'center',
     borderRadius: 18,
-    borderWidth: 2,
-    borderColor: '#1A3A5C',
+    borderWidth: 1,
+    borderColor: 'rgba(14, 46, 81, 0.5)',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'transparent',

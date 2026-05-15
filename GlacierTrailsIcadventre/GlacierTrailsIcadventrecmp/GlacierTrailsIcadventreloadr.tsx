@@ -6,67 +6,70 @@ import {useNavigation} from '@react-navigation/native';
 import WebView from 'react-native-webview';
 
 const wudlanndvildexplorrhtmlloader = `<!DOCTYPE html>
-    <html>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-          html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            background: transparent;
-            overflow: hidden;
-          }
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      overflow: hidden;
+    }
 
-          body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-          .loader {
-            display: block;
-            --height-of-loader: 4px;
-            --loader-color: #0071e2;
-            width: 130px;
-            height: var(--height-of-loader);
-            border-radius: 30px;
-            background-color: rgba(0, 0, 0, 0.2);
-            position: relative;
-            overflow: hidden;
-          }
+    .loader {
+      width: 44.8px;
+      height: 44.8px;
+      color: #554cb5;
+      position: relative;
+      background: radial-gradient(11.2px, currentColor 94%, #0000);
+    }
 
-          .loader::before {
-            content: "";
-            position: absolute;
-            background: var(--loader-color);
-            top: 0;
-            left: 0;
-            width: 0%;
-            height: 100%;
-            border-radius: 30px;
-            animation: moving 1s ease-in-out infinite;
-          }
+    .loader:before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background:
+        radial-gradient(10.08px at bottom right, #0000 94%, currentColor) top left,
+        radial-gradient(10.08px at bottom left, #0000 94%, currentColor) top right,
+        radial-gradient(10.08px at top right, #0000 94%, currentColor) bottom left,
+        radial-gradient(10.08px at top left, #0000 94%, currentColor) bottom right;
+      background-size: 22.4px 22.4px;
+      background-repeat: no-repeat;
+      animation: loader 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+    }
 
-          @keyframes moving {
-            50% {
-              width: 100%;
-            }
+    @keyframes loader {
+      33% {
+        inset: -11.2px;
+        transform: rotate(0deg);
+      }
 
-            100% {
-              width: 0;
-              right: 0;
-              left: unset;
-            }
-          }
-        </style>
-      </head>
+      66% {
+        inset: -11.2px;
+        transform: rotate(90deg);
+      }
 
-      <body>
-        <div class="loader"></div>
-      </body>
-    </html>`;
+      100% {
+        inset: 0;
+        transform: rotate(90deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+</body>
+</html>`;
 
 const GlacierTrailsIcadventreloadr = () => {
   const wudlanndvildexplorrNavigation = useNavigation();
@@ -95,7 +98,7 @@ const GlacierTrailsIcadventreloadr = () => {
             source={{html: wudlanndvildexplorrhtmlloader}}
             scrollEnabled={false}
             originWhitelist={['*']}
-            style={{width: 260, height: 50, backgroundColor: 'transparent'}}
+            style={{width: 260, height: 100, backgroundColor: 'transparent'}}
           />
         </View>
       </ScrollView>

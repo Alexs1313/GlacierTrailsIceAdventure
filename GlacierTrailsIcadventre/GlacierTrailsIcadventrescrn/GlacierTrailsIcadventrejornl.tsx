@@ -424,7 +424,6 @@ export default GlacierTrailsIcadventrejornl;
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    backgroundColor: bg,
   },
   eyebrow: {
     color: eyebrowC,

@@ -1,5 +1,6 @@
 import React from 'react';
 import {ScrollView, StyleSheet, View} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 const GlacierTrailsIcadventrelay = ({
   children,
@@ -10,21 +11,22 @@ const GlacierTrailsIcadventrelay = ({
   bounce?: boolean;
 }) => {
   return (
-    <View style={styles.wudlanndvildexplorrlayBackground}>
+    <LinearGradient
+      colors={['rgb(10, 93, 137)', 'rgb(3, 31, 44)']}
+      style={styles.wudlanndvildexplorrlayBackground}>
       <ScrollView
         bounces={bounce}
         contentContainerStyle={styles.wudlanndvildexplorrlayScrollContent}
         showsVerticalScrollIndicator={false}>
         {children}
       </ScrollView>
-    </View>
+    </LinearGradient>
   );
 };
 
 const styles = StyleSheet.create({
   wudlanndvildexplorrlayBackground: {
     flex: 1,
-    backgroundColor: '#144881',
   },
   wudlanndvildexplorrlayScrollContent: {
     flexGrow: 1,

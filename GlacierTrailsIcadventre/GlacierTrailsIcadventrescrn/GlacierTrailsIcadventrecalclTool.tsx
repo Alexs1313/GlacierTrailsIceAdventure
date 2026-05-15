@@ -475,7 +475,6 @@ const styles = StyleSheet.create({
   flex: {flex: 1},
   root: {
     flex: 1,
-    backgroundColor: bg,
   },
   headRow: {
     flexDirection: 'row',
