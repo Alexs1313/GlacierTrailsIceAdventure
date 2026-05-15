@@ -5,6 +5,7 @@ import {
   Image,
   ImageBackground,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   View,
@@ -250,6 +251,7 @@ const GlacierTrailsIcadventrenvgtrRun = () => {
         <View style={styles.hudLeft}>
           {[0, 1, 2].map(i => (
             <Image
+              key={`life-${i}`}
               source={
                 i >= lives
                   ? require('../../assets/imgs/glaciertrailsgmliked.png')
@@ -336,83 +338,93 @@ const GlacierTrailsIcadventrenvgtrRun = () => {
 
       {phase === 'pause' ? (
         <View style={[styles.menuFull, styles.menuFullOverlay]}>
-          <Image
-            source={menuHeroSource}
-            style={[styles.menuHero, {height: heroOverlayH}]}
-            resizeMode="cover"
-          />
-          <View style={[styles.menuPanel, {paddingBottom: insets.bottom + 28}]}>
-            <Text style={styles.menuTitle}>Game Paused</Text>
-            <Text style={styles.menuDesc}>
-              The ice field is waiting. Your ship is safe for now, but the next
-              wave of icebergs is still ahead.
-            </Text>
-            <Pressable
-              onPress={() => {
-                setPhase('play');
-                phaseRef.current = 'play';
-              }}
-              style={({pressed}) => [
-                styles.menuBtnPrimary,
-                pressed && {opacity: 0.92},
-              ]}>
-              <Text style={styles.menuBtnPrimaryTxt}>Resume</Text>
-            </Pressable>
-            <Pressable
-              onPress={() => nav.navigate('GlacierTrailsIcadventrenvgtrMenu')}
-              style={({pressed}) => [
-                styles.menuBtnGhost,
-                pressed && {opacity: 0.9},
-              ]}>
-              <Text style={styles.menuBtnGhostTxt}>Back to Menu</Text>
-            </Pressable>
-          </View>
+          <ScrollView
+            contentContainerStyle={{flexGrow: 1}}
+            showsVerticalScrollIndicator={false}>
+            <Image
+              source={menuHeroSource}
+              style={[styles.menuHero, {height: heroOverlayH}]}
+              resizeMode="cover"
+            />
+            <View
+              style={[styles.menuPanel, {paddingBottom: insets.bottom + 28}]}>
+              <Text style={styles.menuTitle}>Game Paused</Text>
+              <Text style={styles.menuDesc}>
+                The ice field is waiting. Your ship is safe for now, but the
+                next wave of icebergs is still ahead.
+              </Text>
+              <Pressable
+                onPress={() => {
+                  setPhase('play');
+                  phaseRef.current = 'play';
+                }}
+                style={({pressed}) => [
+                  styles.menuBtnPrimary,
+                  pressed && {opacity: 0.92},
+                ]}>
+                <Text style={styles.menuBtnPrimaryTxt}>Resume</Text>
+              </Pressable>
+              <Pressable
+                onPress={() => nav.navigate('GlacierTrailsIcadventrenvgtrMenu')}
+                style={({pressed}) => [
+                  styles.menuBtnGhost,
+                  pressed && {opacity: 0.9},
+                ]}>
+                <Text style={styles.menuBtnGhostTxt}>Back to Menu</Text>
+              </Pressable>
+            </View>
+          </ScrollView>
         </View>
       ) : null}
 
       {phase === 'over' ? (
         <View style={[styles.menuFull, styles.menuFullOverlay]}>
-          <Image
-            source={menuHeroSource}
-            style={[styles.menuHero, {height: heroOverlayH}]}
-            resizeMode="cover"
-          />
-          <View style={[styles.menuPanel, {paddingBottom: insets.bottom + 28}]}>
-            <Text style={[styles.menuTitle, styles.menuTitleTight]}>
-              Game Over
-            </Text>
-            <View style={styles.goScoreRow}>
-              <View style={styles.goCard}>
-                <Text style={styles.goLbl}>YOUR SCORE</Text>
-                <Text style={styles.goValY}>{score}</Text>
+          <ScrollView
+            contentContainerStyle={{flexGrow: 1}}
+            showsVerticalScrollIndicator={false}>
+            <Image
+              source={menuHeroSource}
+              style={[styles.menuHero, {height: heroOverlayH}]}
+              resizeMode="cover"
+            />
+            <View
+              style={[styles.menuPanel, {paddingBottom: insets.bottom + 28}]}>
+              <Text style={[styles.menuTitle, styles.menuTitleTight]}>
+                Game Over
+              </Text>
+              <View style={styles.goScoreRow}>
+                <View style={styles.goCard}>
+                  <Text style={styles.goLbl}>YOUR SCORE</Text>
+                  <Text style={styles.goValY}>{score}</Text>
+                </View>
+                <View style={styles.goCard}>
+                  <Text style={styles.goLbl}>BEST SCORE</Text>
+                  <Text style={styles.goValB}>{Math.max(best, score)}</Text>
+                </View>
               </View>
-              <View style={styles.goCard}>
-                <Text style={styles.goLbl}>BEST SCORE</Text>
-                <Text style={styles.goValB}>{Math.max(best, score)}</Text>
-              </View>
+              {isNewRecord ? (
+                <View style={styles.goBadge}>
+                  <Text style={styles.goBadgeTxt}>🏆 New Record!</Text>
+                </View>
+              ) : null}
+              <Pressable
+                onPress={resetGame}
+                style={({pressed}) => [
+                  styles.menuBtnPrimary,
+                  pressed && {opacity: 0.92},
+                ]}>
+                <Text style={styles.menuBtnPrimaryTxt}>Play Again</Text>
+              </Pressable>
+              <Pressable
+                onPress={() => nav.replace('GlacierTrailsIcadventrenvgtrMenu')}
+                style={({pressed}) => [
+                  styles.menuBtnGhost,
+                  pressed && {opacity: 0.9},
+                ]}>
+                <Text style={styles.menuBtnGhostTxt}>Back to Menu</Text>
+              </Pressable>
             </View>
-            {isNewRecord ? (
-              <View style={styles.goBadge}>
-                <Text style={styles.goBadgeTxt}>🏆 New Record!</Text>
-              </View>
-            ) : null}
-            <Pressable
-              onPress={resetGame}
-              style={({pressed}) => [
-                styles.menuBtnPrimary,
-                pressed && {opacity: 0.92},
-              ]}>
-              <Text style={styles.menuBtnPrimaryTxt}>Play Again</Text>
-            </Pressable>
-            <Pressable
-              onPress={() => nav.replace('GlacierTrailsIcadventrenvgtrMenu')}
-              style={({pressed}) => [
-                styles.menuBtnGhost,
-                pressed && {opacity: 0.9},
-              ]}>
-              <Text style={styles.menuBtnGhostTxt}>Back to Menu</Text>
-            </Pressable>
-          </View>
+          </ScrollView>
         </View>
       ) : null}
     </View>

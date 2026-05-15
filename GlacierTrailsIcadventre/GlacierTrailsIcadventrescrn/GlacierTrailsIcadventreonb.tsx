@@ -223,7 +223,7 @@ const styles = StyleSheet.create({
   },
   glaciertrailsIcadventreonbPanel: {
     flex: 1,
-    backgroundColor: glaciertrailsIcadventreonbBg,
+
     paddingHorizontal: 24,
     paddingTop: 8,
     justifyContent: 'space-between',
