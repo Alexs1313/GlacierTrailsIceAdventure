@@ -10,8 +10,7 @@ import {
   View,
 } from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-
-import type {GlacierTrailsIcadventrecalclStackParamList} from '../GlacierTrailsIcadventrenav/glaciertrailsIcadventrecalclnavtypes';
+import type {GlacierTrailsIcadventrecalclStackParamList} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventrecalclnavtypes';
 import GlacierTrailsIcadventrelay from '../GlacierTrailsIcadventrecmp/GlacierTrailsIcadventrelay';
 import {countSavedCalcs} from './GlacierTrailsIcadventrecalclstore';
 
@@ -19,7 +18,7 @@ const bg = '#144881';
 const accent = '#5BB0D9';
 const muted = '#7E9AB5';
 const titleC = '#E4F2FA';
-const card = '#082A4A';
+
 const eyebrow = '#6BA8C8';
 
 type Nav = StackNavigationProp<
@@ -136,7 +135,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'flex-start',
     gap: 12,
-    marginBottom: 10,
+    marginBottom: 10.1,
   },
   topLeft: {
     flex: 1,
@@ -150,7 +149,7 @@ const styles = StyleSheet.create({
   },
   h1: {
     color: titleC,
-    fontSize: 22,
+    fontSize: 22.44,
     fontWeight: '700',
   },
   savedBtn: {
@@ -158,23 +157,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 6,
     paddingHorizontal: 12,
-    paddingVertical: 8,
+    paddingVertical: 8.1,
     borderRadius: 12,
     borderWidth: 1,
     borderColor: '#4AAAD4',
     backgroundColor: '#0D2137',
   },
   savedIcon: {
-    fontSize: 14,
+    fontSize: 14.41,
   },
   savedTxt: {
     color: accent,
-    fontSize: 12,
+    fontSize: 12.12,
     fontWeight: '700',
   },
   sub: {
     color: '#6BA8C8',
-    fontSize: 13,
+    fontSize: 13.13,
     lineHeight: 20,
     marginBottom: 18,
   },

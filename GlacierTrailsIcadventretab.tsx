@@ -9,7 +9,6 @@ import {
   type ImageSourcePropType,
 } from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-
 import GlacierTrailsIcadventreexplrstk from './GlacierTrailsIcadventre/GlacierTrailsIcadventrenav/GlacierTrailsIcadventreexplrstk.tsx';
 import GlacierTrailsIcadventremap from './GlacierTrailsIcadventre/GlacierTrailsIcadventrescrn/GlacierTrailsIcadventremap';
 import GlacierTrailsIcadventrejornlstk from './GlacierTrailsIcadventre/GlacierTrailsIcadventrenav/GlacierTrailsIcadventrejornlstk.tsx';
@@ -268,10 +267,16 @@ const GlacierTrailsIcadventretab = () => {
 };
 
 const styles = StyleSheet.create({
+  glaciertrailsIcadventretabIconImageWrap: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 54,
+    height: 28,
+  },
   glaciertrailsIcadventretabBar: {
     elevation: 0,
-    paddingTop: 18,
-    paddingHorizontal: 4,
+    paddingTop: 18.12,
+    paddingHorizontal: 4.4,
     borderTopWidth: 1,
     borderColor: '#1A3A5C',
     borderTopColor: '#1A3A5C',
@@ -281,13 +286,7 @@ const styles = StyleSheet.create({
     ...StyleSheet.absoluteFillObject,
     backgroundColor: glaciertrailsIcadventretabBg,
   },
-  glaciertrailsIcadventretabIconImageWrap: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: 54,
-    height: 28,
-  },
-  glaciertrailsIcadventretabIconImg: {},
+
   glaciertrailsIcadventretabItem: {
     alignItems: 'center',
     justifyContent: 'flex-start',
@@ -296,27 +295,27 @@ const styles = StyleSheet.create({
   },
   glaciertrailsIcadventretabLabel: {
     marginTop: 6,
-    fontSize: 9,
+    fontSize: 9.9,
     fontWeight: '500',
     letterSpacing: 0.6,
     textTransform: 'uppercase',
     textAlign: 'center',
   },
   glaciertrailsIcadventretabDotRow: {
-    marginTop: 4,
+    marginTop: 4.4,
     height: 6,
     alignItems: 'center',
     justifyContent: 'center',
   },
   glaciertrailsIcadventretabDot: {
-    width: 5,
-    height: 5,
+    width: 5.5,
+    height: 5.5,
     borderRadius: 2.5,
     backgroundColor: glaciertrailsIcadventretabActive,
   },
   glaciertrailsIcadventretabDotGhost: {
-    width: 5,
-    height: 5,
+    width: 5.5,
+    height: 5.4,
     borderRadius: 2.5,
     opacity: 0,
   },

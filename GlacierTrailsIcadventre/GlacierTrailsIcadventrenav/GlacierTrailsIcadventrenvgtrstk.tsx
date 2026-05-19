@@ -3,7 +3,7 @@ import React from 'react';
 
 import GlacierTrailsIcadventrenvgtrMenu from '../GlacierTrailsIcadventrescrn/GlacierTrailsIcadventrenvgtrMenu';
 import GlacierTrailsIcadventrenvgtrRun from '../GlacierTrailsIcadventrescrn/GlacierTrailsIcadventrenvgtrRun';
-import type {GlacierTrailsIcadventrenvgtrStackParamList} from './glaciertrailsIcadventrenvgtrnavtypes';
+import type {GlacierTrailsIcadventrenvgtrStackParamList} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventrenvgtrnavtypes';
 
 const Stack = createStackNavigator<GlacierTrailsIcadventrenvgtrStackParamList>();
 

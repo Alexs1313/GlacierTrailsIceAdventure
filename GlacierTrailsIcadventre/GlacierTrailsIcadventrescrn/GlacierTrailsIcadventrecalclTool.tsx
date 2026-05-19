@@ -22,7 +22,7 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import type {
   GlacierTrailsIcadventrecalclCalcKind,
   GlacierTrailsIcadventrecalclStackParamList,
-} from '../GlacierTrailsIcadventrenav/glaciertrailsIcadventrecalclnavtypes';
+} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventrecalclnavtypes';
 import GlacierTrailsIcadventrelay from '../GlacierTrailsIcadventrecmp/GlacierTrailsIcadventrelay';
 import {appendSavedCalc} from './GlacierTrailsIcadventrecalclstore';
 
@@ -485,18 +485,18 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
   },
   backBtn: {
-    width: 40,
-    height: 40,
+    width: 40.4,
+    height: 40.4,
     borderRadius: 12,
     backgroundColor: '#061220',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  backImg: {width: 20, height: 20},
+  backImg: {width: 20.2, height: 20.2113},
   headTxt: {flex: 1, minWidth: 0},
   calcLbl: {
     color: muted,
-    fontSize: 11,
+    fontSize: 11.11,
     fontWeight: '700',
     letterSpacing: 1.2,
   },
@@ -510,7 +510,7 @@ const styles = StyleSheet.create({
     height: 1,
     backgroundColor: '#1A3A5C',
     marginHorizontal: 18,
-    marginBottom: 18,
+    marginBottom: 18.18,
     marginTop: 6,
   },
   card: {
@@ -527,7 +527,7 @@ const styles = StyleSheet.create({
   accentBar: {
     width: 3,
     height: 17,
-    borderRadius: 2,
+    borderRadius: 2.1,
   },
   secTitle: {
     color: titleC,
@@ -545,52 +545,52 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#144881',
     borderRadius: 14,
-    paddingHorizontal: 14,
+    paddingHorizontal: 14.14,
     minHeight: 48,
   },
   inp: {
     flex: 1,
     color: titleC,
-    fontSize: 16,
+    fontSize: 16.16,
     paddingVertical: 12,
   },
   unit: {
     color: muted,
-    fontSize: 13,
+    fontSize: 13.13,
     marginLeft: 8,
   },
   calcBtn: {
-    marginTop: 8,
+    marginTop: 8.1,
     borderRadius: 14,
     paddingVertical: 15,
     alignItems: 'center',
   },
   calcBtnTxt: {
-    fontSize: 15,
+    fontSize: 15.15,
     fontWeight: '700',
   },
   err: {
     color: '#E85A5A',
-    fontSize: 15,
+    fontSize: 15.15,
     fontWeight: '600',
   },
   primaryRes: {
     color: titleC,
-    fontSize: 16,
+    fontSize: 16.16,
     fontWeight: '700',
     lineHeight: 24,
-    marginBottom: 10,
+    marginBottom: 10.1,
   },
   line: {
     color: muted,
-    fontSize: 14,
+    fontSize: 14.14,
     lineHeight: 21,
     marginTop: 4,
   },
   pairRow: {
     flexDirection: 'row',
     gap: 10,
-    marginBottom: 12,
+    marginBottom: 12.12,
   },
   pairCard: {
     flex: 1,

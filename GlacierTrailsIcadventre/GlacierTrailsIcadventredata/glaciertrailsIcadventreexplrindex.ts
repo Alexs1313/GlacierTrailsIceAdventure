@@ -1,4 +1,4 @@
-import type {GlacierTrailsIcadventreexplrRow} from './glaciertrailsIcadventreexplrtypes';
+import type {GlacierTrailsIcadventreexplrRow} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventreexplrtypes';
 import raw from './glaciertrailsIcadventreexplrdata.json';
 
 export const glaciertrailsIcadventreexplrData =

@@ -1,4 +1,4 @@
-import type {GlacierTrailsIcadventrejornlArticle} from './glaciertrailsIcadventrejornltypes';
+import type {GlacierTrailsIcadventrejornlArticle} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventrejornltypes';
 
 export const glaciertrailsIcadventrejornlpack2: GlacierTrailsIcadventrejornlArticle[] = [
   {

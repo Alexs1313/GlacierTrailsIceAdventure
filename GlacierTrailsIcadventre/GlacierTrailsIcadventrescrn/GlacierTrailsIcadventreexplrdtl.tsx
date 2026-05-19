@@ -19,7 +19,7 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import {glaciertrailsIcadventreexplrGetById} from '../GlacierTrailsIcadventredata/glaciertrailsIcadventreexplrindex';
 import {glaciertrailsIcadventreexplrResolveImage} from '../GlacierTrailsIcadventredata/glaciertrailsIcadventreexplrimages';
-import type {GlacierTrailsIcadventreexplrStackParamList} from '../GlacierTrailsIcadventrenav/glaciertrailsIcadventreexplrnavtypes';
+import type {GlacierTrailsIcadventreexplrStackParamList} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventreexplrnavtypes';
 import {useGlacierTrailsIcadventreexplrSaved} from './GlacierTrailsIcadventreexplrsavedctx';
 import GlacierTrailsIcadventrelay from '../GlacierTrailsIcadventrecmp/GlacierTrailsIcadventrelay';
 
@@ -158,8 +158,8 @@ const GlacierTrailsIcadventreexplrdtl = () => {
                         glaciertrailsIcadventreexplrdtlSaved.isSaved(
                           glaciertrailsIcadventreexplrdtlG.id,
                         )
-                          ? {width: 30, height: 30, tintColor: '#CC2020'}
-                          : {width: 20, height: 20, tintColor: '#FFFFFF'}
+                          ? {width: 30.3, height: 30.3, tintColor: '#CC2020'}
+                          : {width: 20.2, height: 20.2, tintColor: '#FFFFFF'}
                       }
                       resizeMode="contain"
                     />
@@ -329,43 +329,43 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 16,
-    paddingTop: 58,
+    paddingTop: 58.1,
   },
   glaciertrailsIcadventreexplrdtlHeroRight: {
     flexDirection: 'row',
     gap: 10,
   },
   glaciertrailsIcadventreexplrdtlRoundBtn: {
-    width: 40,
-    height: 40,
+    width: 40.4,
+    height: 40.4,
     borderRadius: 12,
     backgroundColor: '#061220',
     alignItems: 'center',
     justifyContent: 'center',
   },
   glaciertrailsIcadventreexplrdtlRoundBtnImg: {
-    width: 20,
-    height: 20,
+    width: 20.2,
+    height: 20.2,
   },
   glaciertrailsIcadventreexplrdtlRoundTxt: {
     color: glaciertrailsIcadventreexplrdtlTitle,
-    fontSize: 22,
+    fontSize: 22.3,
     fontWeight: '700',
     marginTop: -2,
   },
   glaciertrailsIcadventreexplrdtlHeart: {
     color: '#FFFFFF',
-    fontSize: 20,
+    fontSize: 20.211,
   },
   glaciertrailsIcadventreexplrdtlHeartOn: {
     color: '#CC2020',
   },
   glaciertrailsIcadventreexplrdtlTypeBadge: {
     alignSelf: 'flex-start',
-    margin: 16,
+    margin: 16.16,
     paddingHorizontal: 12,
     paddingVertical: 8,
-    borderRadius: 12,
+    borderRadius: 12.12,
     backgroundColor: '#061220',
     borderWidth: 1,
     borderColor: glaciertrailsIcadventreexplrdtlAccent,
@@ -373,7 +373,7 @@ const styles = StyleSheet.create({
   },
   glaciertrailsIcadventreexplrdtlTypeTxt: {
     color: glaciertrailsIcadventreexplrdtlAccent,
-    fontSize: 12,
+    fontSize: 12.12,
     fontWeight: '700',
   },
   glaciertrailsIcadventreexplrdtlMissingRoot: {
@@ -392,7 +392,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'space-between',
-    gap: 12,
+    gap: 12.12,
   },
   glaciertrailsIcadventreexplrdtlName: {
     flex: 1,

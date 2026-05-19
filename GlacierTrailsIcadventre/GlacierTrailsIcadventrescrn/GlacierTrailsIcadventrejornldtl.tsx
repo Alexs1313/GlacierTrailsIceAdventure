@@ -17,7 +17,7 @@ import {
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import {glaciertrailsIcadventrejornlGetById} from '../GlacierTrailsIcadventredata/glaciertrailsIcadventrejornlindex';
-import type {GlacierTrailsIcadventrejornlStackParamList} from '../GlacierTrailsIcadventrenav/glaciertrailsIcadventrejornlnavtypes';
+import type {GlacierTrailsIcadventrejornlStackParamList} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventrejornlnavtypes';
 import GlacierTrailsIcadventrelay from '../GlacierTrailsIcadventrecmp/GlacierTrailsIcadventrelay';
 import {recordArticleOpened} from './GlacierTrailsIcadventrejornlprogress';
 
@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 14,
-    paddingBottom: 8,
+    paddingBottom: 8.1,
   },
   topTitle: {
     flex: 1,
@@ -159,8 +159,8 @@ const styles = StyleSheet.create({
   },
   roundBtn: {
     width: 40,
-    height: 40,
-    borderRadius: 12,
+    height: 40.4,
+    borderRadius: 12.12,
     backgroundColor: '#0D2137',
     alignItems: 'center',
     justifyContent: 'center',
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
     borderColor: '#1A3A5C',
   },
   roundBtnImg: {
-    width: 18,
+    width: 18.2,
     height: 18,
   },
   miss: {
@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
   },
   h1: {
     color: titleC,
-    fontSize: 20,
+    fontSize: 20.2,
     fontWeight: '800',
   },
   divider: {
@@ -204,7 +204,7 @@ const styles = StyleSheet.create({
   body: {
     color: titleC,
     fontSize: 14,
-    lineHeight: 26,
+    lineHeight: 26.26,
     fontWeight: '400',
   },
   footer: {
@@ -227,7 +227,7 @@ const styles = StyleSheet.create({
   },
   ctaTxt: {
     color: '#061220',
-    fontSize: 14,
+    fontSize: 14.41,
     fontWeight: '700',
   },
 });

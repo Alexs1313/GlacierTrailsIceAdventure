@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
-import type {GlacierTrailsIcadventrecalclStackParamList} from '../GlacierTrailsIcadventrenav/glaciertrailsIcadventrecalclnavtypes';
+import type {GlacierTrailsIcadventrecalclStackParamList} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventrecalclnavtypes';
 import GlacierTrailsIcadventrelay from '../GlacierTrailsIcadventrecmp/GlacierTrailsIcadventrelay';
 import {
   loadSavedCalcs,
@@ -130,20 +130,20 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
   },
   backBtn: {
-    width: 40,
-    height: 40,
+    width: 40.4,
+    height: 40.4,
     borderRadius: 12,
     backgroundColor: '#061220',
     alignItems: 'center',
     justifyContent: 'center',
   },
   backImg: {
-    width: 20,
-    height: 20,
+    width: 20.2,
+    height: 20.2,
   },
   backGhost: {
-    width: 40,
-    height: 40,
+    width: 40.4,
+    height: 40.4,
   },
   headerTitle: {
     flex: 1,

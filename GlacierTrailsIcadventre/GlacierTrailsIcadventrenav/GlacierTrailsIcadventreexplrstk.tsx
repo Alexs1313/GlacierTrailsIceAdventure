@@ -4,7 +4,7 @@ import React from 'react';
 import GlacierTrailsIcadventreexplr from '../GlacierTrailsIcadventrescrn/GlacierTrailsIcadventreexplr';
 import GlacierTrailsIcadventreexplrdtl from '../GlacierTrailsIcadventrescrn/GlacierTrailsIcadventreexplrdtl';
 import {GlacierTrailsIcadventreexplrSavedProvider} from '../GlacierTrailsIcadventrescrn/GlacierTrailsIcadventreexplrsavedctx';
-import type {GlacierTrailsIcadventreexplrStackParamList} from './glaciertrailsIcadventreexplrnavtypes';
+import type {GlacierTrailsIcadventreexplrStackParamList} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventreexplrnavtypes';
 
 const GlacierTrailsIcadventreexplrStack =
   createStackNavigator<GlacierTrailsIcadventreexplrStackParamList>();

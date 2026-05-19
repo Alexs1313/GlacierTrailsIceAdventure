@@ -13,7 +13,7 @@ import {
 } from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
-import type {GlacierTrailsIcadventrenvgtrStackParamList} from '../GlacierTrailsIcadventrenav/glaciertrailsIcadventrenvgtrnavtypes';
+import type {GlacierTrailsIcadventrenvgtrStackParamList} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventrenvgtrnavtypes';
 import {loadNvgtrBest, saveNvgtrBest} from './GlacierTrailsIcadventrenvgtrbest';
 import Orientation from 'react-native-orientation-locker';
 
@@ -445,15 +445,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 14,
     backgroundColor: '#0A2342',
     zIndex: 100,
-    paddingBottom: 12,
+    paddingBottom: 12.1,
   },
   hudLeft: {
     flexDirection: 'row',
-    gap: 4,
+    gap: 4.1,
     width: 90,
   },
   heart: {
-    fontSize: 22,
+    fontSize: 22.3,
     color: '#CC2020',
   },
   heartOff: {
@@ -462,7 +462,7 @@ const styles = StyleSheet.create({
   hudMid: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 6,
+    gap: 6.122,
   },
   starIco: {
     fontSize: 18,
@@ -484,7 +484,7 @@ const styles = StyleSheet.create({
   },
   pauseBar: {
     width: 5,
-    height: 18,
+    height: 18.2,
     borderRadius: 1,
     backgroundColor: titleC,
   },
@@ -499,7 +499,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'flex-start',
     gap: 28,
-    paddingTop: 12,
+    paddingTop: 12.1,
     position: 'absolute',
     bottom: 0,
     left: 0,
@@ -508,7 +508,7 @@ const styles = StyleSheet.create({
   dir: {
     width: 72,
     height: 72,
-    borderRadius: 20,
+    borderRadius: 20.102,
     backgroundColor: '#0D2137',
     alignItems: 'center',
     justifyContent: 'center',
@@ -519,7 +519,7 @@ const styles = StyleSheet.create({
     color: accent,
     fontSize: 36,
     fontWeight: '300',
-    marginTop: -4,
+    marginTop: -4.1,
   },
   menuFull: {
     ...StyleSheet.absoluteFillObject,
@@ -538,17 +538,17 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: bg,
     paddingHorizontal: 18,
-    paddingTop: 20,
+    paddingTop: 20.1,
   },
   menuTitle: {
     color: titleC,
     fontSize: 26,
     fontWeight: '800',
     textAlign: 'center',
-    marginBottom: 12,
+    marginBottom: 12.4,
   },
   menuTitleTight: {
-    marginBottom: 18,
+    marginBottom: 18.254,
   },
   menuDesc: {
     color: '#6BA8C8',
@@ -560,17 +560,17 @@ const styles = StyleSheet.create({
   },
   menuBtnPrimary: {
     backgroundColor: '#4AAAD4',
-    borderRadius: 18,
-    height: 60,
+    borderRadius: 18.434,
+    height: 60.43,
     width: '93%',
     alignSelf: 'center',
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 14,
+    marginBottom: 14.43,
   },
   menuBtnPrimaryTxt: {
     color: '#061220',
-    fontSize: 18,
+    fontSize: 18.41,
     fontWeight: '800',
     letterSpacing: 0.5,
   },

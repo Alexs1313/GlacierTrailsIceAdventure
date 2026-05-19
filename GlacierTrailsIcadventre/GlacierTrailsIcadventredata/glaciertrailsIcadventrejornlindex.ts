@@ -1,4 +1,4 @@
-import type {GlacierTrailsIcadventrejornlArticle} from './glaciertrailsIcadventrejornltypes';
+import type {GlacierTrailsIcadventrejornlArticle} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventrejornltypes';
 import {glaciertrailsIcadventrejornlpack1} from './glaciertrailsIcadventrejornlpack1';
 import {glaciertrailsIcadventrejornlpack2} from './glaciertrailsIcadventrejornlpack2';
 

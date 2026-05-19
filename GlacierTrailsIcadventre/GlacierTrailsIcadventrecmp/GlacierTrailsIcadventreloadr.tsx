@@ -1,11 +1,9 @@
 import {ImageBackground, ScrollView, StyleSheet, View} from 'react-native';
-
 import React, {useEffect} from 'react';
-
 import {useNavigation} from '@react-navigation/native';
 import WebView from 'react-native-webview';
 
-const wudlanndvildexplorrhtmlloader = `<!DOCTYPE html>
+const welcomeLoaderHtml = `<!DOCTYPE html>
     <html>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,30 +67,28 @@ const wudlanndvildexplorrhtmlloader = `<!DOCTYPE html>
     </html>`;
 
 const GlacierTrailsIcadventreloadr = () => {
-  const wudlanndvildexplorrNavigation = useNavigation();
+  const navigation = useNavigation();
 
   useEffect(() => {
-    const wudlanndvildexplorrTimer = setTimeout(() => {
-      wudlanndvildexplorrNavigation.navigate(
-        'GlacierTrailsIcadventreonb' as never,
-      );
-    }, 6000);
+    const welcomeLoaderTimer = setTimeout(() => {
+      navigation.navigate('GlacierTrailsIcadventreonb' as never);
+    }, 6113);
 
     return () => {
-      clearTimeout(wudlanndvildexplorrTimer);
+      clearTimeout(welcomeLoaderTimer);
     };
-  }, [wudlanndvildexplorrNavigation]);
+  }, [navigation]);
 
   return (
     <ImageBackground
       source={require('../../assets/imgs/glaciertrailsIcadvloadbg.png')}
-      style={styles.wudlanndvildexplorrimageBg}>
+      style={styles.backgroundImg}>
       <ScrollView
-        contentContainerStyle={styles.wudlanndvildexplorrscrollContent}
+        contentContainerStyle={styles.scrollWrapp}
         showsVerticalScrollIndicator={false}>
-        <View style={styles.wudlanndvildexplorrbottomWrap}>
+        <View style={styles.bottomLoaderWrap}>
           <WebView
-            source={{html: wudlanndvildexplorrhtmlloader}}
+            source={{html: welcomeLoaderHtml}}
             scrollEnabled={false}
             originWhitelist={['*']}
             style={{width: 260, height: 50, backgroundColor: 'transparent'}}
@@ -106,14 +102,14 @@ const GlacierTrailsIcadventreloadr = () => {
 export default GlacierTrailsIcadventreloadr;
 
 const styles = StyleSheet.create({
-  wudlanndvildexplorrimageBg: {
+  backgroundImg: {
     flex: 1,
   },
-  wudlanndvildexplorrscrollContent: {
+  scrollWrapp: {
     flexGrow: 1,
   },
 
-  wudlanndvildexplorrbottomWrap: {
+  bottomLoaderWrap: {
     position: 'absolute',
     bottom: 0,
     alignSelf: 'center',

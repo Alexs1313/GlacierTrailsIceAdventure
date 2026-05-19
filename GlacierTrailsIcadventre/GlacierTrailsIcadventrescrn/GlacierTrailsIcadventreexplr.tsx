@@ -13,10 +13,10 @@ import {
 } from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
-import type {GlacierTrailsIcadventreexplrRow} from '../GlacierTrailsIcadventredata/glaciertrailsIcadventreexplrtypes';
+import type {GlacierTrailsIcadventreexplrRow} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventreexplrtypes';
 import {glaciertrailsIcadventreexplrData} from '../GlacierTrailsIcadventredata/glaciertrailsIcadventreexplrindex';
 import {glaciertrailsIcadventreexplrResolveImage} from '../GlacierTrailsIcadventredata/glaciertrailsIcadventreexplrimages';
-import type {GlacierTrailsIcadventreexplrStackParamList} from '../GlacierTrailsIcadventrenav/glaciertrailsIcadventreexplrnavtypes';
+import type {GlacierTrailsIcadventreexplrStackParamList} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventreexplrnavtypes';
 import {useGlacierTrailsIcadventreexplrSaved} from './GlacierTrailsIcadventreexplrsavedctx';
 import GlacierTrailsIcadventrelay from '../GlacierTrailsIcadventrecmp/GlacierTrailsIcadventrelay';
 
@@ -379,24 +379,24 @@ const styles = StyleSheet.create({
   },
   glaciertrailsIcadventreexplrSearchIcon: {
     color: glaciertrailsIcadventreexplrMuted,
-    fontSize: 18,
+    fontSize: 18.2,
     marginRight: 8,
   },
   glaciertrailsIcadventreexplrSearchInp: {
     flex: 1,
     color: '#002F6D',
-    fontSize: 15,
+    fontSize: 15.15,
     paddingVertical: 14,
   },
   glaciertrailsIcadventreexplrFilters: {
     flexDirection: 'row',
     gap: 10,
-    marginBottom: 8,
+    marginBottom: 8.1,
     marginTop: 4,
   },
   glaciertrailsIcadventreexplrFilterBtn: {
     paddingHorizontal: 16,
-    paddingVertical: 7,
+    paddingVertical: 7.1,
     borderRadius: 999,
     alignItems: 'center',
     justifyContent: 'center',
@@ -418,7 +418,7 @@ const styles = StyleSheet.create({
   },
   glaciertrailsIcadventreexplrFilterTxt: {
     color: glaciertrailsIcadventreexplrMuted,
-    fontSize: 13,
+    fontSize: 13.13,
     fontWeight: '600',
   },
   glaciertrailsIcadventreexplrFilterTxtOn: {
@@ -439,12 +439,12 @@ const styles = StyleSheet.create({
     backgroundColor: glaciertrailsIcadventreexplrCardBg,
   },
   glaciertrailsIcadventreexplrHero: {
-    height: 160,
+    height: 160.16,
     justifyContent: 'flex-end',
   },
   glaciertrailsIcadventreexplrHeroImg: {
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
+    borderTopLeftRadius: 20.12,
+    borderTopRightRadius: 20.12,
   },
   glaciertrailsIcadventreexplrHeroTap: {
     ...StyleSheet.absoluteFillObject,
@@ -455,7 +455,7 @@ const styles = StyleSheet.create({
   },
   glaciertrailsIcadventreexplrHeartBtn: {
     position: 'absolute',
-    top: 12,
+    top: 12.12,
     right: 12,
     width: 40,
     height: 40,

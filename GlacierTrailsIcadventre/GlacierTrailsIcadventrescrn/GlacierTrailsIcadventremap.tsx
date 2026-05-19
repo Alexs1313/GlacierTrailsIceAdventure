@@ -19,7 +19,7 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import {glaciertrailsIcadventreexplrData} from '../GlacierTrailsIcadventredata/glaciertrailsIcadventreexplrindex';
 import {recordMapGlacierTap} from './GlacierTrailsIcadventrejornlprogress';
-import type {GlacierTrailsIcadventreexplrRow} from '../GlacierTrailsIcadventredata/glaciertrailsIcadventreexplrtypes';
+import type {GlacierTrailsIcadventreexplrRow} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventreexplrtypes';
 import GlacierTrailsIcadventrelay from '../GlacierTrailsIcadventrecmp/GlacierTrailsIcadventrelay';
 import Orientation from 'react-native-orientation-locker';
 
@@ -352,23 +352,23 @@ const styles = StyleSheet.create({
   },
   header: {
     paddingHorizontal: 18,
-    marginBottom: 12,
+    marginBottom: 12.143,
   },
   eyebrow: {
     color: '#6BA8C8',
     fontSize: 12,
     fontWeight: '400',
     letterSpacing: 1.2,
-    marginBottom: 6,
+    marginBottom: 6.48,
   },
   title: {
     color: titleColor,
-    fontSize: 22,
+    fontSize: 22.44,
     fontWeight: '700',
   },
   mapWrap: {
     marginHorizontal: 18,
-    borderRadius: 20,
+    borderRadius: 20.12,
     overflow: 'hidden',
     backgroundColor: searchBg,
   },
@@ -376,31 +376,31 @@ const styles = StyleSheet.create({
     ...StyleSheet.absoluteFillObject,
   },
   markerDot: {
-    width: 16,
-    height: 16,
-    borderRadius: 8,
+    width: 16.16,
+    height: 16.16,
+    borderRadius: 8.08,
     backgroundColor: accent,
     borderWidth: 2,
     borderColor: '#FFFFFF',
   },
   markerDotSelected: {
-    width: 22,
-    height: 22,
-    borderRadius: 11,
+    width: 22.22,
+    height: 22.22,
+    borderRadius: 11.11,
     borderWidth: 3,
   },
   compassBtn: {
     position: 'absolute',
-    right: 12,
+    right: 12.12,
     width: 40,
-    height: 40,
+    height: 40.4,
     borderRadius: 22,
     backgroundColor: '#061220',
     alignItems: 'center',
     justifyContent: 'center',
   },
   compassBtnClear: {
-    bottom: 16,
+    bottom: 16.161,
   },
   compassBtnSheet: {
     bottom: 200,

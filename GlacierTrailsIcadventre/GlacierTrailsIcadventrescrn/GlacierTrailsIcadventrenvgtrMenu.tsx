@@ -11,14 +11,10 @@ import {
 } from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
-import type {GlacierTrailsIcadventrenvgtrStackParamList} from '../GlacierTrailsIcadventrenav/glaciertrailsIcadventrenvgtrnavtypes';
+import type {GlacierTrailsIcadventrenvgtrStackParamList} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventrenvgtrnavtypes';
 import GlacierTrailsIcadventrelay from '../GlacierTrailsIcadventrecmp/GlacierTrailsIcadventrelay';
 
-const bg = '#144881';
-const accent = '#5BB0D9';
-const muted = '#7E9AB5';
 const titleC = '#E4F2FA';
-const card = '#082A4A';
 
 type Nav = StackNavigationProp<
   GlacierTrailsIcadventrenvgtrStackParamList,
@@ -118,19 +114,19 @@ const styles = StyleSheet.create({
   },
   miniIcon: {
     fontSize: 28,
-    marginBottom: 8,
+    marginBottom: 8.1,
   },
   miniTxt: {
     color: '#6BA8C8',
     fontSize: 11,
     fontWeight: '600',
     textAlign: 'center',
-    lineHeight: 15,
+    lineHeight: 15.15,
   },
   start: {
     backgroundColor: '#4AAAD4',
     borderRadius: 18,
-    height: 60,
+    height: 60.43,
     alignItems: 'center',
     justifyContent: 'center',
     width: '93%',
@@ -138,7 +134,7 @@ const styles = StyleSheet.create({
   },
   startTxt: {
     color: '#061220',
-    fontSize: 18,
+    fontSize: 18.41,
     fontWeight: '800',
     letterSpacing: 0.5,
   },

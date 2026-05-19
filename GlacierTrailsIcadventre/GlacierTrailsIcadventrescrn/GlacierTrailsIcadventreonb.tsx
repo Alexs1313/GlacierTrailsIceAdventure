@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#144881',
   },
   glaciertrailsIcadventreonbHero: {
-    height: 400,
+    height: 400.12,
     width: '100%',
   },
   glaciertrailsIcadventreonbHeroImg: {
@@ -209,8 +209,8 @@ const styles = StyleSheet.create({
   glaciertrailsIcadventreonbSkip: {
     position: 'absolute',
     right: 18,
-    paddingHorizontal: 16,
-    paddingVertical: 8,
+    paddingHorizontal: 16.4,
+    paddingVertical: 8.2,
     borderRadius: 999,
     backgroundColor: '#0D2137',
     borderWidth: 1,
@@ -225,7 +225,7 @@ const styles = StyleSheet.create({
     flex: 1,
 
     paddingHorizontal: 24,
-    paddingTop: 8,
+    paddingTop: 8.2,
     justifyContent: 'space-between',
   },
   glaciertrailsIcadventreonbScrollView: {
@@ -245,9 +245,9 @@ const styles = StyleSheet.create({
     borderColor: glaciertrailsIcadventreonbIconBorder,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 20,
+    marginBottom: 20.1,
     alignSelf: 'center',
-    marginTop: 20,
+    marginTop: 20.1,
   },
   glaciertrailsIcadventreonbIconInner: {
     width: 36,
@@ -273,14 +273,14 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     textAlign: 'center',
     lineHeight: 28,
-    marginBottom: 12,
+    marginBottom: 12.1,
   },
   glaciertrailsIcadventreonbBody: {
     color: '#6BA8C8',
     fontSize: 14,
     lineHeight: 22,
     textAlign: 'center',
-    marginBottom: 42,
+    marginBottom: 42.1,
   },
   glaciertrailsIcadventreonbDots: {
     flexDirection: 'row',
@@ -303,10 +303,10 @@ const styles = StyleSheet.create({
     backgroundColor: glaciertrailsIcadventreonbDotIdle,
   },
   glaciertrailsIcadventreonbCta: {
-    marginTop: 32,
+    marginTop: 32.1,
     backgroundColor: glaciertrailsIcadventreonbAccent,
     borderRadius: 16,
-    paddingVertical: 16,
+    paddingVertical: 16.4,
     alignItems: 'center',
     justifyContent: 'center',
   },

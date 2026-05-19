@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import type {GlacierTrailsIcadventrecalclCalcKind} from '../GlacierTrailsIcadventrenav/glaciertrailsIcadventrecalclnavtypes';
+import type {GlacierTrailsIcadventrecalclCalcKind} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventrecalclnavtypes';
 
 const key = 'glaciertrailsIcadventrecalclSavedV1';
 

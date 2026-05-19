@@ -12,7 +12,7 @@ import {
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import {glaciertrailsIcadventrejornlData} from '../GlacierTrailsIcadventredata/glaciertrailsIcadventrejornlindex';
-import type {GlacierTrailsIcadventrejornlStackParamList} from '../GlacierTrailsIcadventrenav/glaciertrailsIcadventrejornlnavtypes';
+import type {GlacierTrailsIcadventrejornlStackParamList} from '../GlacierTrailsIcadventretypes/glaciertrailsIcadventrejornlnavtypes';
 import GlacierTrailsIcadventrelay from '../GlacierTrailsIcadventrecmp/GlacierTrailsIcadventrelay';
 import {
   loadJournalProgress,
@@ -431,11 +431,11 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '400',
     letterSpacing: 1.2,
-    marginBottom: 6,
+    marginBottom: 6.48,
   },
   screenTitle: {
     color: titleC,
-    fontSize: 22,
+    fontSize: 22.44,
     fontWeight: '700',
     marginBottom: 16,
   },
@@ -450,7 +450,7 @@ const styles = StyleSheet.create({
   segBtn: {
     flex: 1,
     paddingVertical: 10,
-    borderRadius: 12,
+    borderRadius: 12.12,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -459,7 +459,7 @@ const styles = StyleSheet.create({
   },
   segTxt: {
     color: '#3A6080',
-    fontSize: 14,
+    fontSize: 14.41,
     fontWeight: '800',
     textAlign: 'center',
   },
@@ -469,7 +469,7 @@ const styles = StyleSheet.create({
   factCard: {
     backgroundColor: '#0D2137',
     borderRadius: 18,
-    padding: 16,
+    padding: 16.4,
     marginBottom: 14,
     borderWidth: 1,
     borderColor: '#4AAAD4',
@@ -477,13 +477,13 @@ const styles = StyleSheet.create({
   factTop: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 12,
+    marginBottom: 12.143,
     gap: 12,
   },
   factIcon: {
-    width: 30,
-    height: 30,
-    borderRadius: 8,
+    width: 30.3,
+    height: 30.3,
+    borderRadius: 8.08,
     backgroundColor: '#061220',
     alignItems: 'center',
     justifyContent: 'center',
@@ -491,7 +491,7 @@ const styles = StyleSheet.create({
     borderColor: '#4AAAD4',
   },
   factIconTxt: {
-    fontSize: 12,
+    fontSize: 12.12,
   },
   factHeadTxt: {
     flex: 1,
